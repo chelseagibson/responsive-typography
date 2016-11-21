@@ -10,12 +10,40 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
   color: #222;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+img:first-child, img:nth-child(3) {
+  width: 100%;
+  display: inline-block;
+}
+
+img:nth-child(2), img:nth-child(4) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    width: 100%;
+  }
+
+  img:nth-child(2), img:nth-child(4) {
+    display: inline-block;
+    width: 49%;
+  }
+
+  img:first-child, img:nth-child(3) {
+    width: 49%;
+  }
 }
 
 article {
