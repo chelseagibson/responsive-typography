@@ -23,6 +23,16 @@ img {
   width: 100%;
 }
 
+.quote {
+  color: #999;
+}
+
+body {
+  margin: 0;
+}
+
+
+
 img:first-child, img:nth-child(3) {
   width: 100%;
   display: inline-block;
@@ -33,6 +43,32 @@ img:nth-child(2), img:nth-child(4) {
 }
 
 @media only screen and (min-width: 25em) {
+
+  article {
+    max-width: 38em;
+  }
+
+  article h1 {
+    font-weight: normal;
+  }
+
+  article header {
+    border-bottom: 1px solid #999;
+  }
+
+  article header p {
+    font-style: italic;
+  }
+
+  article > p:last-child {
+    border-bottom: 1px solid #999;
+  }
+
+  blockquote {
+    max-width: 24em;
+    color: #555;
+    font-size: 1.125rem;
+  }
 
   img {
     width: 100%;
@@ -50,6 +86,42 @@ img:nth-child(2), img:nth-child(4) {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+  article {
+    max-width: 60em;
+  }
+
+  article h1 {
+    font-weight: normal;
+  }
+
+  article header {
+    border-bottom: 1px solid #999;
+  }
+
+  article header p {
+    font-style: italic;
+  }
+
+  article > p:last-child {
+    border-bottom: 1px solid #999;
+  }
+
+  blockquote {
+    max-width: 24em;
+    color: #555;
+    font-size: 1.125rem;
+  }
+
   img {
     width: 100%;
   }
@@ -66,6 +138,16 @@ img:nth-child(2), img:nth-child(4) {
 }
 
 @media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
 
   img {
     width: 100%;
@@ -86,32 +168,83 @@ img:nth-child(2), img:nth-child(4) {
     text-align: center;
   }
 
-article {
-  max-width: 43em;
+  article {
+    max-width: 43em;
+  }
+
+  article h1 {
+    font-weight: normal;
+  }
+
+  article header {
+    border-bottom: 1px solid #999;
+  }
+
+  article header p {
+    font-style: italic;
+  }
+
+  article > p:last-child {
+    border-bottom: 1px solid #999;
+  }
+
+  blockquote {
+    max-width: 24em;
+    color: #555;
+    font-size: 1.125rem;
+  }
+
 }
 
-article h1 {
-  font-weight: normal;
-}
+@media only screen and (min-width: 90em) {
 
-article header {
-  border-bottom: 1px solid #999;
-}
+  html {
+    font-size: 130%;
+  }
 
-article header p {
-  font-style: italic;
-}
+  img {
+    width: 100%;
+  }
 
-article > p:last-child {
-  border-bottom: 1px solid #999;
-}
+  img:nth-child(2), img:nth-child(3), img:nth-child(4) {
+    display: inline-block;
+    width: 24%;
 
-blockquote {
-  max-width: 24em;
-  color: #555;
-  font-size: 1.125rem;
-}
+  }
 
-.quote {
-  color: #999;
+  img:first-child {
+    display: inline-block;
+    width: 24%;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  article {
+    max-width: 43em;
+  }
+
+  article h1 {
+    font-weight: normal;
+  }
+
+  article header {
+    border-bottom: 1px solid #999;
+  }
+
+  article header p {
+    font-style: italic;
+  }
+
+  article > p:last-child {
+    border-bottom: 1px solid #999;
+  }
+
+  blockquote {
+    max-width: 24em;
+    color: #555;
+    font-size: 1.125rem;
+  }
+
 }
